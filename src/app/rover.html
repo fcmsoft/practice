@@ -1,0 +1,10 @@
+<section class="rover-images">
+  <h2>{{$ctrl.rover.name}}</h2>
+  <div class="photos" ng-hide="$ctrl.error">
+    <img ng-repeat="photo in $ctrl.photos | limitTo : $ctrl.limit" ng-src="photo.img_src">
+   
+  </div>
+
+  <p class="error" ng-show="$ctrl.error">An error happened. Please try again later.</p>
+
+</section>

@@ -1,0 +1,14 @@
+<section class="today">
+  <h2>Image of the day</h2>
+  <div class="today-photo" ng-hide="$ctrl.error">
+    <img ng-src="{{$ctrl.image}}" alt="Image of the day">
+    <div class="label">  
+      <p>{{$ctrl.rover}} {{$ctrl.camera}}</p>
+      <p>{{$ctrl.date | date : format : mediumDate}}</p>
+    </div>
+
+  </div>
+
+  <p class="error" ng-show="$ctrl.error">An error happened. Please try again later.</p>
+
+</section>
